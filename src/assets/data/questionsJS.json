@@ -1,0 +1,47 @@
+[
+	{
+		"question": "Какая конструкция в JavaScript позволяет повторять определенный блок кода несколько раз?",
+		"answers": [
+			{ "answer": "Объект", "isTrue": "false" },
+			{ "answer": "Функция", "isTrue": "false" },
+			{ "answer": "Цикл", "isTrue": "true" },
+			{ "answer": "Переменная", "isTrue": "false" }
+		]
+	},
+    {
+		"question": "Что такое переменная в JavaScript?",
+		"answers": [
+			{ "answer": "Блок кода", "isTrue": "false" },
+			{ "answer": "Контейнер для хранения значения", "isTrue": "true" },
+			{ "answer": "Условный оператор", "isTrue": "false" },
+			{ "answer": "DOM", "isTrue": "false" }
+		]
+	},
+    {
+		"question": "Какой тип данных представляет собой контейнер, хранящий значение в JavaScript?",
+		"answers": [
+			{ "answer": "Функция", "isTrue": "false" },
+			{ "answer": "Массив", "isTrue": "false" },
+			{ "answer": "Переменная ", "isTrue": "true" },
+			{ "answer": "Объект", "isTrue": "false" }
+		]
+	},
+    {
+		"question": "Какой тип данных JavaScript представляет упорядоченный набор значений?",
+		"answers": [
+			{ "answer": "Массив", "isTrue": "true" },
+			{ "answer": "Строка", "isTrue": "false" },
+			{ "answer": "Объект", "isTrue": "false" },
+			{ "answer": "Функция", "isTrue": "false" }
+		]
+	},
+    {
+		"question": "Что представляет собой базовая единица данных в JavaScript?",
+		"answers": [
+			{ "answer": "Массив", "isTrue": "false" },
+			{ "answer": "Строка", "isTrue": "false" },
+			{ "answer": "Объект", "isTrue": "false" },
+			{ "answer": "Функция", "isTrue": "true" }
+		]
+	}
+]
