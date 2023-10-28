@@ -75,35 +75,7 @@
       <div class="quiz-container">
         <div class="quiz">
           <h3 id="title"></h3>
-          <div class="questions-div">
-            <div class="answer__button">
-              <input
-                id="radio-${i}"
-                type="radio"
-                name="radio"
-                value="${dataHtml[dataIndex].answers[i].isTrue}"
-              />
-              <label for="radio-${i}"></label>
-            </div>
-            <div class="answer__button">
-              <input
-                id="radio-${i}"
-                type="radio"
-                name="radio"
-                value="${dataHtml[dataIndex].answers[i].isTrue}"
-              />
-              <label for="radio-${i}"></label>
-            </div>
-            <div class="answer__button">
-              <input
-                id="radio-${i}"
-                type="radio"
-                name="radio"
-                value="${dataHtml[dataIndex].answers[i].isTrue}"
-              />
-              <label for="radio-${i}"></label>
-            </div>
-          </div>
+          <div class="questions-div"></div>
           <button id="next-question">Следующий вопрос</button>
         </div>
       </div>
@@ -168,7 +140,6 @@
 
     <!-- Конец блока footer -->
     <script type="module" src="./src/scripts/card.js"></script>
-    <script src="./src/scripts/quiz.js"></script>
     <script src="./src/scripts/htmlQuiz.js"></script>
   </body>
 </html>

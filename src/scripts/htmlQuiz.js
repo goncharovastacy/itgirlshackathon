@@ -29,38 +29,38 @@ const htmlData = [
   {
     question: "Какой тег используется для создания заголовка на веб-странице?",
     answers: [
-      { answer: "<header>", isTrue: "false" },
-      { answer: "<title>", isTrue: "false" },
-      { answer: "<h1>", isTrue: "true" },
-      { answer: "<p>", isTrue: "false" },
+      { answer: "header", isTrue: "false" },
+      { answer: "title", isTrue: "false" },
+      { answer: "h1", isTrue: "true" },
+      { answer: "p", isTrue: "false" },
     ],
   },
   {
     question:
       "Какой тег используется для создания ссылки на другую веб-страницу?",
     answers: [
-      { answer: "<img>", isTrue: "false" },
-      { answer: "<a>", isTrue: "true" },
-      { answer: "<link>", isTrue: "false" },
-      { answer: "<div>", isTrue: "false" },
+      { answer: "img", isTrue: "false" },
+      { answer: "a", isTrue: "true" },
+      { answer: "link", isTrue: "false" },
+      { answer: "div", isTrue: "false" },
     ],
   },
   {
     question: "Какой тег используется для вставки изображения на веб-страницу?",
     answers: [
-      { answer: "<img>", isTrue: "true" },
-      { answer: "<div>", isTrue: "false" },
-      { answer: "<a>", isTrue: "false" },
-      { answer: "<p>", isTrue: "false" },
+      { answer: "img", isTrue: "true" },
+      { answer: "div", isTrue: "false" },
+      { answer: "a", isTrue: "false" },
+      { answer: "p", isTrue: "false" },
     ],
   },
   {
     question: "Какой тег используется для создания абзаца текста?",
     answers: [
-      { answer: "<p>", isTrue: "true" },
-      { answer: "<h1>", isTrue: "false" },
-      { answer: "<div>", isTrue: "false" },
-      { answer: "<span>", isTrue: "false" },
+      { answer: "p", isTrue: "true" },
+      { answer: "h1", isTrue: "false" },
+      { answer: "div", isTrue: "false" },
+      { answer: "span", isTrue: "false" },
     ],
   },
 ];
@@ -86,7 +86,7 @@ const defaultValues = () => {
   }
 };
 
-defaultValues();
+document.addEventListener("DOMContentLoaded", defaultValues);
 
 const nextQuestion = () => {
   dataIndex++;
@@ -105,7 +105,7 @@ const count = () => {
   const values = document.querySelectorAll(".answer__button input");
   values.forEach((el) => {
     if (el.checked && el.value === "true") {
-      counter += 1;
+      counter++;
     }
   });
 };
@@ -119,6 +119,7 @@ nextButton.addEventListener("click", () => {
   count();
   if (dataIndex < 4) {
     nextQuestion();
+    console.log(questionsDiv);
   } else {
     endGame();
   }
