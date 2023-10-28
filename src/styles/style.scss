@@ -2,31 +2,31 @@
 @import "./header";
 @import "./footer";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
 }
 
 .container {
-    display: flex;
-    height: 70vh;
-    align-items: center;
-    background-color: $bg;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  background-color: $bg;
 
-    @media screen and (max-width: $mobile) {
-		flex-direction: column;
-	}
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
 }
 
 .block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2vw;
-    border-radius: 1em;
-    background-color: $bg-dark;
-    height: $block-size;
-    width: $block-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+  border-radius: 1em;
+  background-color: $bg-dark;
+  height: $block-size;
+  width: $block-size;
 }
