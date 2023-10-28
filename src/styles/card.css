@@ -42,6 +42,9 @@
 
 .footer__nav-list {
   display: flex;
+  list-style-type: none;
+  width: 60vw;
+  justify-content: space-between;
 }
 
 * {
@@ -57,5 +60,9 @@
   height: 70vh;
   align-items: center;
   justify-content: center;
-  background-color: #3383d4;
+  background-color: #79C6FE;
+}
+
+.card {
+  background-color: #4394F4;
 }/*# sourceMappingURL=card.css.map */

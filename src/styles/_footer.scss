@@ -9,4 +9,7 @@
 
 .footer__nav-list {
     display: flex;
+    list-style-type: none;
+    width: 60vw;
+    justify-content: space-between;
 }

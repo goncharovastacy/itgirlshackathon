@@ -42,6 +42,9 @@
 
 .footer__nav-list {
   display: flex;
+  list-style-type: none;
+  width: 60vw;
+  justify-content: space-between;
 }
 
 * {
@@ -55,7 +58,7 @@
   display: flex;
   height: 70vh;
   align-items: center;
-  background-color: #3383d4;
+  background-color: #79C6FE;
 }
 @media screen and (max-width: 576px) {
   .container {
@@ -68,8 +71,8 @@
   justify-content: center;
   align-items: center;
   margin: 2vw;
-  border: 2px solid #F7AC3A;
   border-radius: 1em;
+  background-color: #4394F4;
   height: 30vw;
   width: 30vw;
 }/*# sourceMappingURL=style.css.map */
