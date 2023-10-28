@@ -38,6 +38,11 @@
 
 .header__wrapper {
     display: flex;
+    position: sticky;
+	top:0;
+    height: 15vh;
+    width: 100vw;
+    background-color: $accent1;
     align-items: center;
     justify-content: space-between;
     padding: 10px 120px;
