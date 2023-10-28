@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    width: 100vw;
+    height: $height;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent1;
+}
+
+.footer__nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 60vw;
+    justify-content: space-between;
+}
