@@ -1,0 +1,28 @@
+
+.header {
+    display: flex;
+    position: sticky;
+	top:0;
+    width: 100vw;
+    height: $height;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $accent1;
+}
+
+.nav {
+    ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    list-style-type: none;
+
+    li {
+        padding: 2vw;
+        border: 1px solid $accent2;
+        border-radius: 1em;
+        margin: 0 1vw 0 1vw;
+    }
+
+}
+}

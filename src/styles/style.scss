@@ -1,0 +1,32 @@
+@import "./vars";
+@import "./header";
+@import "./footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+.container {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    background-color: $bg;
+
+    @media screen and (max-width: $mobile) {
+		flex-direction: column;
+	}
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    border: 2px solid $accent2;
+    border-radius: 1em;
+    height: $block-size;
+    width: $block-size;
+}
