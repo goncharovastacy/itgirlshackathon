@@ -34,7 +34,7 @@
 .footer {
   display: flex;
   width: 100vw;
-  height: 15vh;
+  height: 20vw;
   justify-content: center;
   align-items: center;
   background-color: #F9E8CD;
@@ -73,6 +73,6 @@
   margin: 2vw;
   border-radius: 1em;
   background-color: #4394F4;
-  height: 30vw;
-  width: 30vw;
+  height: 20vw;
+  width: 20vw;
 }/*# sourceMappingURL=style.css.map */
