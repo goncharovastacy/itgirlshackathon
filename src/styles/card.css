@@ -11,10 +11,11 @@
   position: sticky;
   top: 0;
   width: 100vw;
-  height: 15vh;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(255, 132, 0);
+  background-color: #F9E8CD;
+}
+
+.header__nav {
+  display: flex;
 }
 
 .nav ul {
@@ -25,7 +26,7 @@
 }
 .nav ul li {
   padding: 2vw;
-  border: 1px solid rgb(128, 42, 171);
+  border: 1px solid #F7AC3A;
   border-radius: 1em;
   margin: 0 1vw 0 1vw;
 }
@@ -36,7 +37,11 @@
   height: 15vh;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 132, 0);
+  background-color: #F9E8CD;
+}
+
+.footer__nav-list {
+  display: flex;
 }
 
 * {

@@ -4,12 +4,12 @@
     position: sticky;
 	top:0;
     width: 100vw;
-    height: $height;
-    justify-content: space-between;
-    align-items: center;
     background-color: $accent1;
 }
 
+.header__nav{
+    display: flex;
+}
 .nav {
     ul {
     display: flex;
