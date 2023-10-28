@@ -11,22 +11,13 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     height: 70vh;
     align-items: center;
+    justify-content: center;
     background-color: $bg;
-
-    @media screen and (max-width: $mobile) {
-		flex-direction: column;
-	}
 }
 
-.block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2vw;
-    border-radius: 1em;
+.card {
     background-color: $bg-dark;
-    height: $block-size;
-    width: $block-size;
 }

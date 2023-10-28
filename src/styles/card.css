@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Roboto Slab;
+  src: url(../assets/RobotoSlab-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Luckiest;
+  src: url(../assets/Luckiest.otf);
+}
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: #F9E8CD;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  list-style-type: none;
+}
+.nav ul li {
+  padding: 2vw;
+  border: 1px solid #F7AC3A;
+  border-radius: 1em;
+  margin: 0 1vw 0 1vw;
+}
+
+.footer {
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9E8CD;
+}
+
+.footer__nav-list {
+  display: flex;
+  list-style-type: none;
+  width: 60vw;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Luckiest;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #79C6FE;
+}
+
+.card {
+  background-color: #4394F4;
+}/*# sourceMappingURL=card.css.map */
