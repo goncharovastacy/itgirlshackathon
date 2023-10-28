@@ -1,40 +1,147 @@
+@charset "UTF-8";
 @font-face {
   font-family: Roboto Slab;
   src: url(../assets/RobotoSlab-VariableFont_wght.ttf);
 }
-
 @font-face {
   font-family: Luckiest;
   src: url(../assets/Luckiest.otf);
 }
+.header__logo-img {
+  width: 10vw;
+}
 
-.header {
+.wrapper {
+  max-width: 100%;
+  display: flex;
+}
+
+.header__wrapper {
   display: flex;
   position: sticky;
   top: 0;
   height: 15vh;
   width: 100vw;
   background-color: #F9E8CD;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 120px;
+  position: fixed;
+  width: 100%;
+  height: 79px;
+  margin: 0 auto;
+  z-index: 3;
 }
 
-.header__nav {
+.header__nav-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.nav ul {
+.nav__item {
+  margin-right: 82px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  width: 35px;
+  color: #444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px; /* 107.692% */
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav__link:active {
+  opacity: 75%;
+  text-decoration: underline;
+}
+
+/* бургер-меню */
+.hamburger-menu {
+  display: none;
+  z-index: 3;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
   display: flex;
   align-items: center;
-  justify-content: right;
-  list-style-type: none;
+  position: fixed;
+  top: 20px;
+  left: 90vw;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.nav ul li {
-  padding: 2vw;
-  border: 1px solid #F7AC3A;
-  border-radius: 1em;
-  margin: 0 1vw 0 1vw;
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #14274a;
+  transition-duration: 0.25s;
 }
 
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  background-color: rgba(29, 67, 40, 0.701);
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+}
+
+/* конец бургер-меню */
 .footer {
   display: flex;
   width: 100vw;
@@ -74,9 +181,9 @@
 }
 
 .container {
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
-  height: 70vh;
   align-items: center;
   justify-content: center;
   background-color: #79C6FE;
@@ -111,6 +218,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
@@ -161,9 +269,10 @@
   background-color: #F7AC3A;
 }
 
-/*# sourceMappingURL=card.css.map */
-
 .quiz {
+  padding: 20px 0;
+  width: 50vw;
+  border-radius: 20px;
   background-color: rgba(241, 247, 167, 0.52);
 }
 
@@ -174,7 +283,7 @@
   padding: 10px 10px;
   cursor: pointer;
   line-height: 34px;
-  border: 1px solid #999;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 6px;
   user-select: none;
 }
@@ -197,8 +306,9 @@ input[type=radio] {
 #next-question {
   margin: 38px auto 0;
   padding: 10px 20px;
-  max-width: 295px;
+  width: 20vw;
   border-radius: 20px;
   background-color: #F7AC3A;
-  border: none;
 }
+
+/*# sourceMappingURL=card.css.map */
