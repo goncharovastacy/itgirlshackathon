@@ -269,6 +269,10 @@
   background-color: #F7AC3A;
 }
 
+.quiz-container {
+  display: none;
+}
+
 .quiz {
   padding: 20px 0;
   width: 50vw;

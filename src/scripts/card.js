@@ -4,7 +4,6 @@ const par = document.getElementById("par");
 const textOne = document.getElementById("textOne");
 const divCard = document.querySelector(".card-container");
 const quizDiv = document.querySelector(".quiz-container");
-quizDiv.hidden = true;
 
 const cardsHTML = [
   {
@@ -62,8 +61,8 @@ next.addEventListener("click", () => {
     par.textContent = cardsHTML[k].title;
     textOne.textContent = cardsHTML[k].text;
   } else {
-    divCard.hidden = true;
-    quizDiv.hidden = false;
+    divCard.style.display = "none";
+    quizDiv.style.display = "block";
   }
 });
 
