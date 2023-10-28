@@ -2,10 +2,12 @@
   font-family: Roboto Slab;
   src: url(../assets/RobotoSlab-VariableFont_wght.ttf);
 }
+
 @font-face {
   font-family: Luckiest;
   src: url(../assets/Luckiest.otf);
 }
+
 .header {
   display: flex;
   position: sticky;
@@ -25,6 +27,7 @@
   justify-content: right;
   list-style-type: none;
 }
+
 .nav ul li {
   padding: 2vw;
   border: 1px solid #F7AC3A;
@@ -156,4 +159,46 @@
 
 #next-term:hover {
   background-color: #F7AC3A;
-}/*# sourceMappingURL=card.css.map */
+}
+
+/*# sourceMappingURL=card.css.map */
+
+.quiz {
+  background-color: rgba(241, 247, 167, 0.52);
+}
+
+.answer__button label {
+  display: block;
+  margin: 15px auto 0;
+  max-width: 350px;
+  padding: 10px 10px;
+  cursor: pointer;
+  line-height: 34px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  user-select: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.quiz {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title {
+  text-align: center;
+}
+
+#next-question {
+  margin: 38px auto 0;
+  padding: 10px 20px;
+  max-width: 295px;
+  border-radius: 20px;
+  background-color: #F7AC3A;
+  border: none;
+}
