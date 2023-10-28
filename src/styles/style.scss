@@ -11,7 +11,7 @@
 
 .container {
   display: flex;
-  height: 70vh;
+  height: 65vh;
   align-items: center;
   background-color: $bg;
 
@@ -29,4 +29,14 @@
   background-color: $bg-dark;
   height: $block-size;
   width: $block-size;
+
+  img {
+    width: 80%;
+  }
+}
+
+.cards-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -38,18 +38,13 @@
 
 .header__wrapper {
     display: flex;
-    position: sticky;
-	top:0;
-    height: 15vh;
+    height: 20vh;
     width: 100vw;
     background-color: $accent1;
     align-items: center;
     justify-content: space-between;
     padding: 10px 120px;
-    position: fixed;
-    background-color: $white;
     width: 100%;
-    height: 79px;
     margin: 0 auto;
     z-index: 3;
 }
@@ -58,6 +53,8 @@
 .header__nav-list {
     display: flex;
     flex-wrap: wrap;
+        list-style-type: none;
+
 }
 
 .nav__item {
@@ -71,7 +68,7 @@
 .nav__link {
     width: 35px;
     color: #444;
-    font-family: $font-main;
+    font-family: $font;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px; /* 107.692% */
@@ -80,16 +77,16 @@
 .nav__link:hover, .nav__link:focus, .nav__link:active {
     opacity: 75%;
     text-decoration: underline;
-    color: $yellow;
+    color: $accent2;
 }
 
  
  /* бургер-меню */
  .menu__item{
-    color: $white;
+    color: $accent1;
  }
  .hamburger-menu {
-    font-family: $font-main;
+    font-family: $font;
     display: none;
     z-index: 3;
 }
@@ -157,7 +154,7 @@
     top: 0;
     left: -100%;
     text-align: center;
-    font-family: $font-main;
+    font-family: $font;
     font-size: 30px;
     width: 100%;
     margin: 0;
