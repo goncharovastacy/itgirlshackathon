@@ -7,6 +7,55 @@
     <title></title>
   </head>
   <body>
+    
+    <!-- Начало блока header -->
+
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link">
+              <img src="assets/images/logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="header__nav">
+            <nav class="header__nav-wrapper">
+              <ul class="header__nav-list">
+                <li class="nav__item nav__item_active">
+                  <a class="nav__link" href="#">Текс1</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Текс2</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Текс3</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Текс4</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!--    бургер-меню    -->
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#">Текс1</a></li>
+            <li><a class="menu__item" href="#">Текс2</a></li>
+            <li><a class="menu__item" href="#">Текс3</a></li>
+            <li><a class="menu__item" href="#">Текс4</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- Конец блока header -->
+
     <script src="./src/scripts/index.js"></script>
   </body>
 </html>
