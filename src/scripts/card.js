@@ -49,6 +49,7 @@ const cardsHTML = [
 ];
 
 let k = 0;
+const last = cardsHTML.length-1;
 
 document.addEventListener("DOMContentLoaded", () => {
   par.textContent = cardsHTML[k].title;
@@ -56,19 +57,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 next.addEventListener("click", () => {
-  if (k < 9) {
+  if (k < last-1) {
     k++;
     par.textContent = cardsHTML[k].title;
     textOne.textContent = cardsHTML[k].text;
   } else {
-    divCard.style.display = "none";
-    quizDiv.style.display = "block";
+    k=0;
+    par.textContent = cardsHTML[k].title;
+    textOne.textContent = cardsHTML[k].text;
   }
 });
 
 back.addEventListener("click", () => {
   if (k > 0) {
     k--;
+    par.textContent = cardsHTML[k].title;
+    textOne.textContent = cardsHTML[k].text;
+  } else {
+    k=last;
     par.textContent = cardsHTML[k].title;
     textOne.textContent = cardsHTML[k].text;
   }
