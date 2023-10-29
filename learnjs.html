@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./src/assets/kitty.png" />
-    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/card.css" />
     <title>new app to learn frontend</title>
   </head>
   <body class="body">
-    <!-- Начало блока header -->
     <header class="header">
       <div class="wrapper">
         <div class="header__wrapper">
@@ -60,31 +59,31 @@
     </header>
     <main class="main">
       <div class="container">
-        <div class="block">
-          <a href="./learnhtml.html" class="cards-link"
-            ><img src="src/assets/logo cards/htmllogo.png" alt="htmllogo"
-          /></a>
+        <div class="card-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p id="par" class="card-text"></p>
+              </div>
+              <div class="flip-card-back">
+                <p id="textOne" class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="button" id="prev-term">Назад</button>
+            <button id="next-term">Вперед</button>
+          </div>
         </div>
-        <div class="block">
-          <a href="./learncss.html" class="cards-link"
-            ><img src="src/assets/logo cards/csslogo.png" alt="csslogo"
-          /></a>
-        </div>
-        <div class="block">
-          <a href="./learnjs.html" class="cards-link"
-            ><img
-              src="src/assets/logo cards/java scriptlogo.png"
-              alt="javalogo"
-          /></a>
-        </div>
-        <div class="block">
-          <a href="./learnreact.html" class="cards-link"
-            ><img src="src/assets/logo cards/react logo.png" alt="reactlogo"
-          /></a>
+        <div class="quiz-container">
+          <div class="quiz">
+            <h3 id="title"></h3>
+            <div class="questions-div"></div>
+            <button class="button" id="next-question">Следующий вопрос</button>
+          </div>
         </div>
       </div>
     </main>
-
     <!-- Начало блока footer -->
     <footer class="footer">
       <div class="footer__logo">
@@ -109,7 +108,6 @@
         <a class="footer__a" href="https://github.com/Irinswin">Irinswin</a>
       </div>
     </footer>
-
-    <!-- Конец блока footer -->
+    <script src="./src/scripts/learnjs.js" type="module"></script>
   </body>
 </html>
