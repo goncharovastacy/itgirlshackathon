@@ -42,7 +42,7 @@
 	height: $block-size;
 	width: $block-size;
 	padding: 1vw;
-	@media screen and (max-width: $tablet) {
+	@media screen and (max-width: $mobile) {
 		height: $block-size * 1.5;
 		width: $block-size * 1.5;
 	}

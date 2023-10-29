@@ -272,7 +272,7 @@
   width: 20vw;
   padding: 1vw;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 576px) {
   .block {
     height: 30vw;
     width: 30vw;
