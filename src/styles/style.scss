@@ -40,3 +40,35 @@
   justify-content: center;
   align-items: center;
 }
+
+.hamburger-menu {
+  // font-family: $font-main;
+  display: none;
+  z-index: 3;
+}
+
+@media (max-width: 576px) {
+  header {
+    .header__nav {
+      display: none;
+    }
+
+    .hamburger-menu {
+      display: block;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    .header__nav {
+      display: none;
+    }
+
+    .hamburger-menu {
+      display: block;
+      position: relative;
+    }
+  }
+}
