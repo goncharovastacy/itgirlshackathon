@@ -3,16 +3,15 @@
 @import "./footer";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: $font;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font;
 }
 
 .body {
 	display: flex;
 	flex-flow: column;
-	height: 100vh;
 }
 
 .main {
@@ -20,136 +19,141 @@
 }
 
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: $bg;
+	height: 100%;
+	display: flex;
+	gap: 2vh;
+	padding: 2vh 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: $bg;
 }
 
 .flip-card {
-  background-color: $bg;
-  width: 70vw;
-  height: 30vh;
-  perspective: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	background-color: $bg;
+	width: 70vw;
+	height: 30vh;
+	perspective: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
 }
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 .flip-card-front,
 .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	display: flex;
+	justify-content: center;
 }
 .flip-card-front {
-  background-color: $bg-dark;
-  color: $text;
-  display: flex;
-  border-radius: 1em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: $bg-dark;
+	color: $text;
+	display: flex;
+	border-radius: 1em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card-back {
-  background-color: #d4e5fa;
-  color: $text;
-  transform: rotateY(180deg);
-  border-radius: 1em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: #d4e5fa;
+	color: $text;
+	transform: rotateY(180deg);
+	border-radius: 1em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .btn {
-  margin-top: 2vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+	margin-top: 2vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .card-text {
-  align-self: center;
-  font-size: 1rem;
-  margin: 0 5vw
+	align-self: center;
+	font-size: 1rem;
+	margin: 0 5vw;
 }
 
-#prev-term,
-#next-term {
-  padding: 1vw;
-  background-color: $accent2;
-  width: 20vw;
-  border-radius: 10px;
-  margin: 1vw;
+button {
+	padding: 1vw;
+	background-color: $accent2;
+	width: 20vw;
+	border-radius: 10px;
+	margin: 1vw auto;
 
-  &:hover,
-&:focus,
-&:active {
-	background-color: $accent3;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
-}
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $accent3;
+		transform: translateY(-3px);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		transition: 0.5s;
+	}
 }
 
-.quiz-container {
-  display: none;
-}
+// .quiz-container {
+//   display: none;
+// }
 
 .quiz {
-  padding: 20px 0;
-  width: 50vw;
-  border-radius: 20px;
-  background-color: rgba(241, 247, 167, 0.52);
+	padding: 20px 0;
+	width: 70vw;
+	border-radius: 20px;
+	background-color: $accent3;
+}
+
+.questions-div {
+	margin: 1vh;
 }
 
 .answer__button {
-  label {
-    display: block;
-    margin: 15px auto 0;
-    max-width: 350px;
-    padding: 10px 10px;
-    cursor: pointer;
-    line-height: 34px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 6px;
-    user-select: none;
-  }
+  width: 80%;
+  margin: 2vh 5vw;
+	label {
+    min-width: 100%;
+		display: block;
+		padding: 2vh 2vw;
+    margin: 2vh 2vw;
+		text-align: center;
+		cursor: pointer;
+		border: 2px solid $accent2;
+		border-radius: 1rem;
+		user-select: none;
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $accent2;
+			transform: translateY(-3px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			transition: 0.5s;
+		}
+	}
 }
 
 input[type="radio"] {
-  display: none;
+	display: none;
 }
 
 .quiz {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #title {
-  text-align: center;
-}
-
-#next-question {
-  margin: 38px auto 0;
-  padding: 10px 20px;
-  width: 20vw;
-  border-radius: 20px;
-  background-color: $accent2;
-  //   border: none;
+	text-align: center;
 }

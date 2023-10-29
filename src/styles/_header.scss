@@ -1,17 +1,19 @@
 .header {
 	display: flex;
 	height: 12vh;
-	width: 100vw;
 	background-color: $accent1;
 }
 
 .header__logo-img {
 	height: 10vh;
 }
+.wrapper {
+	width: 100%;
+}
 
 .header__wrapper {
 	display: flex;
-	width: 100vw;
+	width: 100%;
 	align-items: center;
 	justify-content: space-between;
 	padding: 1vh 10vw;

@@ -6,7 +6,6 @@
 .header {
   display: flex;
   height: 12vh;
-  width: 100vw;
   background-color: #F9E8CD;
 }
 
@@ -14,9 +13,13 @@
   height: 10vh;
 }
 
+.wrapper {
+  width: 100%;
+}
+
 .header__wrapper {
   display: flex;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 1vh 10vw;
@@ -176,7 +179,6 @@
 
 /* конец бургер-меню */
 .footer {
-  width: 100vw;
   justify-content: center;
   align-items: center;
   background-color: #F9E8CD;
@@ -193,7 +195,7 @@
 
 .footer__nav {
   display: flex;
-  width: 100vw;
+  width: 100%;
   list-style-type: none;
   justify-content: space-around;
 }
