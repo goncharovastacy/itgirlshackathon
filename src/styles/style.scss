@@ -3,83 +3,75 @@
 @import "./footer";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: $font;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font;
 }
 
 .body {
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
 }
 
 .main {
-  display: flex;
-  flex-flow: column;
-  height: 100%;
+	height: 100%;
 }
 
 .container {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: space-around;
-  background-color: $bg;
-  @media screen and (max-width: $tablet) {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  }
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: space-around;
+	background-color: $bg;
+	@media screen and (max-width: $tablet) {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 1em;
-  background-color: $bg-dark;
-  height: $block-size;
-  width: $block-size;
-  padding: 1vw;
-  @media screen and (max-width: $tablet) {
-    height: $block-size*1.5;
-    width: $block-size*1.5;
-  }
-  // @media screen and (max-width: $mobile) {
-  //   height: $block-size*2;
-  //   width: $block-size*2;
-  // }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 1em;
+	background-color: $bg-dark;
+	height: $block-size;
+	width: $block-size;
+	padding: 1vw;
+	@media screen and (max-width: $tablet) {
+		height: $block-size * 1.5;
+		width: $block-size * 1.5;
+	}
 
-  img {
-    width: 100%;
-  }
-
-
+	img {
+		width: 100%;
+	}
 }
 
 .block:hover {
-  background-color: $accent3;
-  height: $block-size+1vw;
-  width: $block-size+1vw;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  transition: all 0.3s ease;
+	background-color: $accent3;
+	height: $block-size + 1vw;
+	width: $block-size + 1vw;
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
 
-  @media screen and (max-width: $tablet) {
-    height: ($block-size+1vw)*1.5;
-    width: ($block-size+1vw)*1.5;
-  }
+	@media screen and (max-width: $tablet) {
+		height: ($block-size + 1vw) * 1.5;
+		width: ($block-size + 1vw) * 1.5;
+	}
 
-  // @media screen and (max-width: $mobile) {
-  //   height: ($block-size+1vw)*2;
-  //   width: ($block-size+1vw)*2.2;
-  // }
+	// @media screen and (max-width: $mobile) {
+	//   height: ($block-size+1vw)*2;
+	//   width: ($block-size+1vw)*2.2;
+	// }
 }
 
 .cards-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

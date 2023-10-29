@@ -3,7 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	background-color: $accent1;
-height: auto;
+	height: auto;
 }
 
 .footer__logo,
@@ -23,7 +23,7 @@ height: auto;
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
+		justify-items: center;
 	}
 	@media screen and (max-width: $mobile) {
 		display: grid;
