@@ -1,179 +1,180 @@
 .header {
-    display: flex;
-    height: 12vh;
-    width: 100vw;
-    background-color: $accent1;
+	display: flex;
+	height: 12vh;
+	width: 100vw;
+	background-color: $accent1;
 }
 
 .header__logo-img {
-  height: 10vh;
+	height: 10vh;
 }
 
-
 .header__wrapper {
-  display: flex;
-  width: 100vw;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1vh 10vw;
-  margin: 0 auto;
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1vh 10vw;
+	margin: 0 auto;
 }
 
 .header__nav-list {
-    display: flex;
-    flex-wrap: nowrap;
-    list-style-type: none;
-    padding: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	list-style-type: none;
+	padding: 0;
 }
 
 .nav__item {
-  margin-right: 3vw;
+	margin-right: 3vw;
 }
 
 .nav__item:last-child {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .nav__link {
-    width: 35px;
-    color: $text;
-    font-size: 1.2rem;
-    font-weight: 400;
-    transition: all 0.3s ease;
-    text-decoration: none;
+	width: 35px;
+	color: $text;
+	font-size: 1.2rem;
+	font-weight: 400;
+	transition: all 0.3s ease;
+	text-decoration: none;
 }
-.nav__link:hover, .nav__link:focus, .nav__link:active {
-    background-color: $accent2;
-    border: 1px solid $accent2;
-    border-radius: 1em;
-    padding: 1vh 2vw;
-}
-
- /* бургер-меню */
-
- .hamburger-menu {
-  display: none;
-  z-index: 3;
+.nav__link:hover,
+.nav__link:focus,
+.nav__link:active {
+	background-color: $accent2;
+	border: 1px solid $accent2;
+	border-radius: 1em;
+	padding: 1vh 2vw;
 }
 
-@media (max-width: 576px) {
-  header {
-    .header__nav {
-      display: none;
-    }
+/* бургер-меню */
 
-    .hamburger-menu {
-      display: block;
-      position: relative;
-    }
-  }
+.hamburger-menu {
+	display: none;
+	z-index: 3;
 }
 
-@media (max-width: 576px) {
-  header {
-    .header__nav {
-      display: none;
-    }
+@media (max-width: $mobile) {
+	header {
+		.header__nav {
+			display: none;
+		}
 
-    .hamburger-menu {
-      display: block;
-      position: relative;
-    }
-  }
+		.hamburger-menu {
+			display: block;
+			position: fixed;
+		}
+	}
 }
 
-.menu__item{
-    color: $accent1;
+@media (max-width: $mobile) {
+	header {
+		.header__nav {
+			display: none;
+		}
+
+		.hamburger-menu {
+			display: block;
+			position: relative;
+		}
+	}
+}
+
+.menu__item {
+	color: $accent1;
 }
 .hamburger-menu {
-    display: none;
-    z-index: 3;
+	display: none;
+	z-index: 3;
 }
 
 #menu__toggle {
-  display: none;
+	display: none;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 #menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
+	top: 0;
+	transform: rotate(0);
 }
 
 #menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
+	top: 0;
+	transform: rotate(90deg);
 }
 
 #menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
+	visibility: visible;
+	left: 0;
 }
 
 .menu__btn {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 4vh;
-  left: 85vw;
-  width: 6vw;
-  height: 6vw;
-  cursor: pointer;
-  z-index: 1;
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: -9vh;
+	left: 85vw;
+	width: 6vw;
+	height: 6vw;
+	cursor: pointer;
+	z-index: 1;
 }
 
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: $text;
-  transition-duration: 0.25s;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: $text;
+	transition-duration: 0.25s;
 }
 
 .menu__btn > span::before {
-  content: "";
-  top: -8px;
+	content: "";
+	top: -8px;
 }
 
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
+.menu__btn > span::after {
+	content: "";
+	top: 8px;
+}
 
-  .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    text-align: center;
-    font-size: 2rem;
-    width: 100%;
-    height: 100%;
-    padding: 10vh 0;
-    list-style: none;
-    background-color: rgba($bg-dark, 0.8);
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    transition-duration: .25s;
+.menu__box {
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	left: -100%;
+	text-align: center;
+	font-size: 2rem;
+	width: 100%;
+	height: 100%;
+	padding: 10vh 0;
+	list-style: none;
+	background-color: rgba($bg-dark, 0.8);
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+	transition-duration: 0.25s;
 
-    li {
-      padding: 1vh 0;
-    }
-    li:hover {
-      width: 100%;
-      background-color: $accent2;
-    }
-  }
+	li {
+		padding: 1vh 0;
+	}
+	li:hover {
+		width: 100%;
+		background-color: $accent2;
+	}
+}
 
-  .menu__item {
-    text-decoration: none;
-    color: $text;
-  }
+.menu__item {
+	text-decoration: none;
+	color: $text;
+}
 
 /* конец бургер-меню */
