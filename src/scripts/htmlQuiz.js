@@ -82,7 +82,7 @@ const defaultValues = () => {
     questionsDiv.innerHTML += `<div class="answer__button">
         <input id="radio-${i}" type="radio" name="radio" value="${htmlData[dataIndex].answers[i].isTrue}" />
         <label for="radio-${i}">${htmlData[dataIndex].answers[i].answer}</label>
-        </div>`;
+       </div>`;
   }
 };
 
@@ -97,7 +97,7 @@ const nextQuestion = () => {
     questionsDiv.innerHTML += `<div class="answer__button">
         <input id="radio-${i}" type="radio" name="radio" value="${htmlData[dataIndex].answers[i].isTrue}" />
         <label for="radio-${i}">${htmlData[dataIndex].answers[i].answer}</label>
-        </div>`;
+       </div>`;
   }
 };
 
@@ -119,7 +119,7 @@ nextButton.addEventListener("click", () => {
   count();
   if (dataIndex < 4) {
     nextQuestion();
-    // console.log(questionsDiv);
+    console.log(questionsDiv);
   } else {
     endGame();
   }
