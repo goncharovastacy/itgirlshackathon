@@ -3,62 +3,75 @@
 @import "./footer";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: $font;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font;
+}
+
+.body {
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
+}
+
+.main {
+	height: 100%;
 }
 
 .container {
-  display: flex;
-  height: 70vh;
-  align-items: center;
-  background-color: $bg;
-
-  @media screen and (max-width: $mobile) {
-    flex-direction: column;
-  }
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: space-around;
+	background-color: $bg;
+	@media screen and (max-width: $tablet) {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2vw;
-  border-radius: 1em;
-  background-color: $bg-dark;
-  height: $block-size;
-  width: $block-size;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 1em;
+	background-color: $bg-dark;
+	height: $block-size;
+	width: $block-size;
+	padding: 1vw;
+	@media screen and (max-width: $mobile) {
+		height: $block-size * 1.5;
+		width: $block-size * 1.5;
+	}
+
+	img {
+		width: 100%;
+	}
 }
 
-.hamburger-menu {
-  // font-family: $font-main;
-  display: none;
-  z-index: 3;
+.block:hover {
+	background-color: $accent3;
+	height: $block-size + 1vw;
+	width: $block-size + 1vw;
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+
+	@media screen and (max-width: $tablet) {
+		height: ($block-size + 1vw) * 1.5;
+		width: ($block-size + 1vw) * 1.5;
+	}
+
+	// @media screen and (max-width: $mobile) {
+	//   height: ($block-size+1vw)*2;
+	//   width: ($block-size+1vw)*2.2;
+	// }
 }
 
-@media (max-width: 576px) {
-  header {
-    .header__nav {
-      display: none;
-    }
-
-    .hamburger-menu {
-      display: block;
-      position: relative;
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  header {
-    .header__nav {
-      display: none;
-    }
-
-    .hamburger-menu {
-      display: block;
-      position: relative;
-    }
-  }
+.cards-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

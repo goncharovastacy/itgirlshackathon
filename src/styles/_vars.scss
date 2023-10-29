@@ -1,9 +1,4 @@
 @font-face {
-	font-family: Roboto Slab;
-	src: url(../assets/RobotoSlab-VariableFont_wght.ttf);
-}
-
-@font-face {
 	font-family: Luckiest;
 	src: url(../assets/Luckiest.otf);
 }
@@ -14,7 +9,8 @@ $bg-dark:#4394F4;
 $accent1: #F9E8CD;
 $accent2: #F7AC3A;
 $accent3: #C2F9A1;
-$text: rgb(0, 0, 0);
+$text: #212121;
 $mobile: 576px;
+$tablet: 1000px;
 $height: 20vw;
 $block-size: 20vw;
